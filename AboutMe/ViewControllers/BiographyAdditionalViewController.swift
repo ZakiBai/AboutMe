@@ -1,25 +1,26 @@
 //
-//  WelcomeViewController.swift
+//  BiographyAdditionalViewController.swift
 //  AboutMe
 //
-//  Created by Zaki on 05.04.2023.
+//  Created by Zaki on 06.04.2023.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+final class BiographyAdditionalViewController: UIViewController {
+    @IBOutlet var textAboutMeLabel: UILabel!
     
-    @IBOutlet var userNameLabel: UILabel!
-    
-    var name: String!
+    var textAboutMe: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textAboutMeLabel.text = textAboutMe
+        
 
         // Do any additional setup after loading the view.
     }
     
-    
+
     /*
     // MARK: - Navigation
 
